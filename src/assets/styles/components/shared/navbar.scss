@@ -1,0 +1,31 @@
+@use "../../variables.scss" as *;
+
+.navbar {
+  position: relative;
+  height: $navbar_height;
+  background-color: $black;
+  color: #fff;
+
+  &__header {
+    height: $navbar_height;
+    position: fixed;
+    z-index: 1500;
+  }
+
+  &__link {
+    height: $navbar_height;
+    background: transparent;
+    color: #fff;
+
+    &.active {
+      background-color: #fff;
+      color: #000;
+      text-transform: uppercase;
+    }
+  }
+
+  &__logo {
+    width: 35px;
+    height: 42px;
+  }
+}
