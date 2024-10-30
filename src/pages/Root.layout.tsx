@@ -1,13 +1,20 @@
+// Components
 import Navbar from "@/components/shared/Navbar.component";
-import { Outlet } from "react-router-dom";
+
+// Sections
+import HeroSection from "./sections/Hero.section";
+import AboutSection from "./sections/About.section";
+
+// Assets
+import "@/assets/styles/pages/root.layout.scss";
 
 const Root = () => {
   return (
-    <div>
+    <div className="root-layout">
       <Navbar />
       <main>
-        text
-        <Outlet />
+        <HeroSection />
+        <AboutSection />
       </main>
     </div>
   );

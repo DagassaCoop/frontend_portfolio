@@ -2,19 +2,14 @@
 
 .navbar {
   position: relative;
+  z-index: 1500;
   height: $navbar_height;
   background-color: $black;
   color: #fff;
 
-  &__header {
-    height: $navbar_height;
-    position: fixed;
-    z-index: 1500;
-  }
-
   &__link {
     height: $navbar_height;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.4);
     color: #fff;
 
     &.active {
@@ -27,5 +22,9 @@
   &__logo {
     width: 35px;
     height: 42px;
+  }
+
+  &.fixed {
+    position: fixed;
   }
 }

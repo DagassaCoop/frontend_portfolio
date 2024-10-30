@@ -7,9 +7,33 @@
   padding: 0;
 }
 
-body {
+html {
   margin: 0;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+}
+
+.subtitle {
+  color: #000;
+  text-align: center;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 6px;
+
+  width: fit-content;
+  padding: 20px 30px;
+  border: 8px solid #000;
+  background: rgba(255, 255, 255, 0);
+
+  text-transform: uppercase;
 }
