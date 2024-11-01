@@ -7,7 +7,8 @@ import Navbar from "@/components/shared/Navbar.component";
 // Sections
 import HeroSection from "./sections/Hero.section";
 import AboutSection from "./sections/About.section";
-import Portfolio from "./sections/Portfolio.section";
+import PortfolioSection from "./sections/Portfolio.section";
+import ContactSection from "./sections/Contact.section";
 
 const Root = () => {
   return (
@@ -16,7 +17,8 @@ const Root = () => {
       <main>
         <HeroSection />
         <AboutSection />
-        <Portfolio />
+        <PortfolioSection />
+        <ContactSection />
       </main>
     </div>
   );

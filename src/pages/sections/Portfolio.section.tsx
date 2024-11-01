@@ -22,7 +22,7 @@ const PORTFOLIO: IPortfolioItem[] = [
   },
 ];
 
-const Portfolio = () => {
+const PortfolioSection = () => {
   return (
     <section className="portfolio-section">
       <div className="flex justify-center relative">
@@ -35,7 +35,7 @@ const Portfolio = () => {
         <h2 className="subtitle relative">Portfolio</h2>
       </div>
       <div>
-        <Grid container spacing={4}>
+        <Grid container>
           {PORTFOLIO.map((item) => {
             return (
               <Grid size={12} key={item.id}>
@@ -45,8 +45,11 @@ const Portfolio = () => {
           })}
         </Grid>
       </div>
+      <div className="portfolio-section__footer flex justify-center items-center text-xl font-semibold py-4">
+        And many more to come!
+      </div>
     </section>
   );
 };
 
-export default Portfolio;
+export default PortfolioSection;

@@ -7,6 +7,7 @@ interface IButtonProps extends PropsWithChildren {
   variant?: "white" | "black";
   classes?: string;
   styles?: React.CSSProperties;
+  type?: "button" | "reset" | "submit";
   onClick?: () => void;
 }
 
@@ -15,10 +16,12 @@ const Button: FC<IButtonProps> = ({
   children,
   classes,
   styles,
+  type,
   onClick,
 }) => {
   return (
     <button
+      type={type ?? undefined}
       className={[
         "button uppercase",
         classes,
