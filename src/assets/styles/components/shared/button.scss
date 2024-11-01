@@ -1,0 +1,19 @@
+@use "../../variables.scss" as *;
+
+.button {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 17px;
+
+  padding: 15px 40px;
+  border: 3px solid black;
+  border-bottom-color: transparent;
+  border-top-color: transparent;
+
+  &_white {
+    color: #fff;
+    border: 3px solid #fff;
+    border-bottom-color: transparent;
+    border-top-color: transparent;
+  }
+}

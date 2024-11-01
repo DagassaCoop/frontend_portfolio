@@ -30,7 +30,7 @@ import mongodb from "@/assets/images/skills/mongodb.svg";
 import firebase from "@/assets/images/skills/firebase.svg";
 
 // Components
-import ButtonLink from "@/components/shared/ButtonLink.component";
+import Button from "@/components/shared/Button.component";
 
 interface ISkill {
   title: string;
@@ -153,7 +153,7 @@ const AboutSection = () => {
           programming websites, my passion is all kinds of motorsport - from
           rallies to the very king of motorsport - formula 1.
         </p>
-        <ButtonLink styles={{ marginBottom: "60px" }}>Explore</ButtonLink>
+        <Button styles={{ marginBottom: "60px" }}>Explore</Button>
         <img
           src={separator}
           alt="separator black"

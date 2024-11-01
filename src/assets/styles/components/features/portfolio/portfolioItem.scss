@@ -1,0 +1,30 @@
+.portfolio-item {
+  color: white;
+
+  &_black {
+    color: #000;
+  }
+
+  &:hover {
+    & * {
+      opacity: 1;
+      visibility: visible;
+      transition:
+        visibility 0s linear 0s,
+        opacity 300ms;
+    }
+  }
+
+  &__content {
+    padding-top: 160px;
+    padding-bottom: 100px;
+
+    transition:
+      visibility 0s linear 300ms,
+      opacity 300ms;
+  }
+
+  &__blur {
+    backdrop-filter: blur(10px);
+  }
+}

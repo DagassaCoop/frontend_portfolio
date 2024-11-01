@@ -20,7 +20,6 @@ const HeroSection = () => {
         alt="hero bg"
         className="hero-section__bg absolute top-0 left-0 w-full h-full object-cover "
       />
-      <div className="hero-section__blur absolute top-0 left-0 w-full h-full" />
       <div className="relative">
         <h3 className="text-center text-lg mb-2">my name is Dmytro</h3>
         <h1 className="font-semibold text-3xl uppercase tracking-wider mb-6">
