@@ -21,7 +21,9 @@ const HeroSection = () => {
         className="hero-section__bg absolute top-0 left-0 w-full h-full object-cover "
       />
       <div className="relative">
-        <h3 className="text-center text-lg mb-2">my name is Dmytro</h3>
+        <h3 className="text-center text-xl tracking-wider mb-2 advent-pro">
+          my name is Dmytro
+        </h3>
         <h1 className="font-semibold text-3xl uppercase tracking-wider mb-6">
           I`m a developer
         </h1>

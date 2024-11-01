@@ -1,0 +1,19 @@
+.skills-section {
+  padding: 60px 66px;
+  &__subhead {
+    color: #000;
+    font-size: 30px;
+    line-height: 26px;
+    font-weight: 900;
+    letter-spacing: 5.561px;
+    text-transform: uppercase;
+  }
+
+  &__skill {
+    margin-bottom: 70px;
+    &-icon {
+      max-width: 100px;
+      max-height: 100px;
+    }
+  }
+}

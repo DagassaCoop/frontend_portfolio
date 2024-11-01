@@ -20,29 +20,8 @@
       position: absolute;
       top: -15px;
       left: -40px;
-      // width: 45px;
       height: 45px;
       opacity: 0.1;
-    }
-  }
-
-  &__skills {
-    &-subhead {
-      color: #000;
-      // font-family: Montserrat;
-      font-size: 30px;
-      line-height: 26px;
-      font-weight: 900;
-      letter-spacing: 5.561px;
-      text-transform: uppercase;
-    }
-  }
-
-  &__skill {
-    margin-bottom: 70px;
-    &-icon {
-      max-width: 100px;
-      max-height: 100px;
     }
   }
 }

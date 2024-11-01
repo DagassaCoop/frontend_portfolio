@@ -32,7 +32,9 @@ const PortfolioSection = () => {
           className="portfolio-section__bg absolute top-0 left-0 w-full h-full object-cover object-top"
         />
         <div className="portfolio-section__blur absolute top-0 left-0 w-full h-full" />
-        <h2 className="subtitle relative">Portfolio</h2>
+        <h2 className="subtitle relative" id="portfolio">
+          Portfolio
+        </h2>
       </div>
       <div>
         <Grid container>

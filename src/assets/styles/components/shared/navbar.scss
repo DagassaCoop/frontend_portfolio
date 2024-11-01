@@ -27,4 +27,8 @@
   &.fixed {
     position: fixed;
   }
+
+  &__divider {
+    height: $navbar_height;
+  }
 }

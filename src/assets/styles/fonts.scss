@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Advent Pro";
+  src: local("Advent_Pro"),
+    url("../fonts/Advent_Pro/AdventPro-VariableFont_wdth\,wght.ttf");
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("../fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open_Sans"),
+    url("../fonts/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+.advent-pro {
+  font-family: "Advent Pro";
+}
+
+.montserrat {
+  font-family: "Montserrat";
+}
+
+.open-sans {
+  font-family: "Open Sans";
+}

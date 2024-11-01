@@ -35,10 +35,13 @@ const ContactSection = () => {
 
   return (
     <section className="contact-section flex flex-col items-center">
-      <h2 className="subtitle mb-10">Contact</h2>
-      <p className="mb-8 text-center">
-        My name is Tomasz Gajda, I’m a third year Applied Computer Science
-        student at AGH University of Science and Technology in Cracow, Poland.{" "}
+      <h2 className="subtitle mb-10" id="contact">
+        Contact
+      </h2>
+      <p className="mb-8 text-center open-sans">
+        My name is Dmytro Bondar. I'm professional frontend developer with over
+        than 4 years of experience in building scalable web applications with
+        user-friendly UI & UX.
       </p>
       <img src={separator} alt="separator" className="mb-10" />
       <form
