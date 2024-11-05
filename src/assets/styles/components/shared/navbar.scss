@@ -1,7 +1,6 @@
 @use "../../variables.scss" as *;
 
 .navbar {
-  position: relative;
   z-index: 1500;
   height: $navbar_height;
   background-color: $black;
@@ -30,5 +29,20 @@
 
   &__divider {
     height: $navbar_height;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar {
+    background-color: transparent;
+    padding: 0 $desktop_hero_x_padding;
+    &__link {
+      height: auto;
+      background: unset;
+
+      .active {
+        border-radius: 20px;
+      }
+    }
   }
 }

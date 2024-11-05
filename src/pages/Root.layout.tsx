@@ -2,7 +2,7 @@
 import "@/assets/styles/pages/root.layout.scss";
 
 // Components
-import Navbar from "@/components/shared/Navbar.component";
+// import Navbar from "@/components/shared/Navbar.component";
 import Footer from "@/components/shared/Footer.component";
 
 // Sections
@@ -28,8 +28,9 @@ const Root = () => {
 
   return (
     <div className="root-layout montserrat" onScroll={updateScrollContext}>
-      <Navbar />
+      {/* <Navbar /> */}
       <main>
+        {/* <Navbar /> */}
         <HeroSection />
         <AboutSection />
         <SkillsSection />

@@ -13,7 +13,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="footer w-full flex flex-col items-center text-white py-11 sm:py-16">
+    <footer className="footer w-full flex flex-col items-center text-white py-11 md:py-16">
       <div
         className="flex flex-col items-center mb-12 cursor-pointer"
         onClick={scrollToTop}

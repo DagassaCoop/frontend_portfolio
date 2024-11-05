@@ -55,7 +55,7 @@ const ContactSection = () => {
             className="contact-section__input w-full border-black border-b-4 border-l-4 px-3 py-1.5 pt-2 mb-1 placeholder:uppercase placeholder:text-xs placeholder:font-bold placeholder:tracking-wider"
             placeholder="Enter your name*"
           />
-          <div className="text-sm text-red-600">{errors.name?.message}</div>
+          <div className="text-md text-red-600">{errors.name?.message}</div>
         </div>
 
         <div className="mb-8 w-3/5">
@@ -65,7 +65,7 @@ const ContactSection = () => {
             className="contact-section__input w-full border-black border-b-4 border-l-4 px-3 py-1.5 pt-2 mb-1 placeholder:uppercase placeholder:text-xs placeholder:font-bold placeholder:tracking-wider"
             placeholder="Enter your email*"
           />
-          <div className="text-sm text-red-600">{errors.email?.message}</div>
+          <div className="text-md text-red-600">{errors.email?.message}</div>
         </div>
 
         <div className="mb-8 w-3/5">
@@ -75,7 +75,7 @@ const ContactSection = () => {
             className="contact-section__input w-full border-black border-b-4 border-l-4 px-3 py-1.5 pt-2 mb-1 placeholder:uppercase placeholder:text-xs placeholder:font-bold placeholder:tracking-wider"
             placeholder="Phone number"
           />
-          <div className="text-sm text-red-600">{errors.phone?.message}</div>
+          <div className="text-md text-red-600">{errors.phone?.message}</div>
         </div>
 
         <div className="mb-10 w-3/5">
@@ -86,7 +86,7 @@ const ContactSection = () => {
             placeholder="Enter your message*"
             rows={6}
           />
-          <div className="text-sm text-red-600">{errors.message?.message}</div>
+          <div className="text-md text-red-600">{errors.message?.message}</div>
         </div>
 
         <Button type="submit">Submit</Button>

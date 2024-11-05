@@ -5,16 +5,13 @@ import CloseIcon from "@mui/icons-material/Close";
 
 // Assets
 import "@/assets/styles/components/shared/navbar.scss";
-import logo from "@/assets/images/logo.svg";
-
-// Hooks
-import { useScrollContext } from "@/hooks/useScrollContext";
+import logoWhite from "@/assets/images/logo_white.svg";
+import logoBlack from "@/assets/images/logo_black.svg";
 
 const NAVBAR_HEIGHT = 58;
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const context = useScrollContext();
 
   const aboutSectionRef = useRef<HTMLElement | null>(null);
   const skillsSectionRef = useRef<HTMLElement | null>(null);
@@ -65,27 +62,29 @@ const Navbar = () => {
     setOpen(false);
   };
 
+  const scrollToTop = () => {
+    document
+      .querySelector(".root-layout")
+      ?.scrollTo({ top: 0, behavior: "smooth" });
+    setOpen(false);
+  };
+
   return (
     <>
       {/* Mobile */}
-      {context && context.scroll.top > NAVBAR_HEIGHT ? (
-        <div className="navbar__divider" />
-      ) : null}
       <div
         className={[
-          "navbar w-full sm:hidden flex items-center px-8 bg-inherit",
+          "navbar w-full md:hidden flex items-center px-8 bg-inherit fixed top-0 left-0",
           open ? "justify-between" : "justify-end",
-          context && context.scroll.top > NAVBAR_HEIGHT
-            ? "fixed top-0 left-0"
-            : "",
         ].join(" ")}
       >
         {open ? (
           <>
             <img
               className="navbar__logo cursor-pointer"
-              src={logo}
+              src={logoWhite}
               alt="logo"
+              onClick={scrollToTop}
             />
             <CloseIcon
               onClick={handleDrawerClose}
@@ -102,7 +101,7 @@ const Navbar = () => {
         )}
 
         <Drawer
-          className="navbar__drawer sm:hidden"
+          className="navbar__drawer md:hidden"
           anchor="top"
           open={open}
           onClose={handleDrawerClose}
@@ -119,7 +118,7 @@ const Navbar = () => {
                   key={link.title}
                   onClick={() => scrollIntoRef(link.ref)}
                 >
-                  <span className="cursor-pointer text-sm font-semibold">
+                  <span className="cursor-pointer text-md font-semibold">
                     {link.title}
                   </span>
                 </div>
@@ -129,7 +128,31 @@ const Navbar = () => {
         </Drawer>
       </div>
       {/* Desktop */}
-      <div></div>
+      <div className="navbar hidden md:flex justify-between items-center absolute top-16 left-0 w-full">
+        <img
+          className="navbar__logo cursor-pointer black"
+          src={logoBlack}
+          alt="logo"
+          onClick={scrollToTop}
+        />
+        <div className="flex">
+          {LINKS.map((link) => {
+            return (
+              <div
+                className={[
+                  "navbar__link w-full flex justify-center items-center px-6",
+                ].join(" ")}
+                key={link.title}
+                onClick={() => scrollIntoRef(link.ref)}
+              >
+                <span className="cursor-pointer text-md font-semibold whitespace-nowrap">
+                  {link.title}
+                </span>
+              </div>
+            );
+          })}
+        </div>
+      </div>
     </>
   );
 };

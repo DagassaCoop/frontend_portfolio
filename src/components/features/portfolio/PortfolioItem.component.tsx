@@ -32,7 +32,7 @@ const PortfolioItem: FC<IPortfolioProps> = ({ item }) => {
         <h3 className="text-3xl lowercase mb-6 invisible opacity-0">
           {item.title}
         </h3>
-        <p className="w-full mb-6 text-center text-sm invisible opacity-0">
+        <p className="w-full mb-6 text-center text-md invisible opacity-0">
           {item.description}
         </p>
         <div className="w-full flex justify-center">

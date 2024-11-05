@@ -1,3 +1,35 @@
+@use "../../variables.scss" as *;
+
 .hero-section {
   padding: 250px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    padding: 250px 0 250px $desktop_hero_x_padding;
+    padding: 0 $desktop_hero_x_padding;
+    border-bottom: 60px solid black;
+
+    &__person {
+      padding-top: 100px;
+      img {
+        max-height: 100vh;
+      }
+    }
+
+    &__bg-black {
+      transform: skew(-10deg);
+      right: -10%;
+    }
+
+    &__subtitle {
+      color: #909090;
+    }
+
+    &__icon {
+      padding: 5px;
+      background: #f0efef;
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+  }
 }
