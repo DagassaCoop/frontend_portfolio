@@ -47,13 +47,13 @@ const HeroSection = () => {
         </div>
       </div>
       <div className="hidden md:block w-1/3 flex flex-col items-start">
-        <h3 className="text-2xl tracking-wider mb-8 font-semibold">
-          Hi, I am
-        </h3>
+        <h3 className="text-2xl tracking-wider mb-8 font-semibold">Hi, I am</h3>
         <h1 className="font-semibold text-4xl tracking-wide mb-1">
           Dmytro Bondar
         </h1>
-        <h4 className="hero-section__subtitle mb-12 font-bold">Front-end Developer</h4>
+        <h4 className="hero-section__subtitle mb-12 font-bold">
+          Front-end Developer
+        </h4>
         <div className="flex justify-start items-center">
           <a href={"mailto: " + MAIL} className="hero-section__icon mr-8">
             <AlternateEmailIcon fontSize="large" />

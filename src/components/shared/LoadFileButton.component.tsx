@@ -7,12 +7,16 @@ import Button from "./Button.component";
 import cv from "@/assets/data/Bondar Software CV.pdf";
 
 interface ILoadFileButtonProps extends PropsWithChildren {
-  styles?: React.CSSProperties;
+  classes?: string;
 }
 
-const LoadFileButton: FC<ILoadFileButtonProps> = ({ children, styles }) => {
+const LoadFileButton: FC<ILoadFileButtonProps> = ({ children, classes }) => {
   return (
-    <a className="no-underline" href={cv} target="_blank" style={styles}>
+    <a
+      className={["no-underline", classes].join(" ")}
+      href={cv}
+      target="_blank"
+    >
       <Button>{children}</Button>
     </a>
   );

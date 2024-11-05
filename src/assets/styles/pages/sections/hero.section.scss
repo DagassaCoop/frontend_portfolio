@@ -4,7 +4,7 @@
   padding: 250px 0;
 }
 
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero-section {
     padding: 250px 0 250px $desktop_hero_x_padding;
     padding: 0 $desktop_hero_x_padding;
