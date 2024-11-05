@@ -1,3 +1,5 @@
+@use "../../variables.scss" as *;
+
 .skills-section {
   padding: 60px 66px;
   &__subhead {
@@ -12,8 +14,13 @@
   &__skill {
     margin-bottom: 70px;
     &-icon {
-      max-width: 100px;
-      max-height: 100px;
+      height: 100px;
     }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills-section {
+    padding: 0 $desktop_section_x_padding;
   }
 }

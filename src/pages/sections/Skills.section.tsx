@@ -1,3 +1,5 @@
+import Grid from "@mui/material/Grid2"
+
 // Assets
 import "@/assets/styles/pages/sections/skills.section.scss";
 
@@ -20,6 +22,8 @@ import graphql from "@/assets/images/skills/graphql.png";
 import sass from "@/assets/images/skills/sass.svg";
 import mui from "@/assets/images/skills/mui.png";
 import tailwind from "@/assets/images/skills/tailwindcss.png";
+import bootstrap from "@/assets/images/bootstrap.png"
+import storybook from "@/assets/images/storybook.svg"
 
 // Assets > Databases
 import mongodb from "@/assets/images/skills/mongodb.svg";
@@ -93,6 +97,14 @@ const TECHNOLOGIES: ISkill[] = [
     title: "Tailwind CSS",
     imgSrc: tailwind,
   },
+  {
+    title: "Bootstrap",
+    imgSrc: bootstrap
+  },
+  {
+    title: "Storybook",
+    imgSrc: storybook
+  }
 ];
 
 const DATABASES: ISkill[] = [
@@ -131,20 +143,21 @@ const SKILLS: {
 const SkillsSection = () => {
   return (
     <section className="skills-section w-full flex flex-col flex-wrap items-center">
-      <h2 className="subtitle mb-12" id="skills">
+      <h2 className="subtitle mb-12 md:mb-20" id="skills">
         Skills
       </h2>
       {SKILLS.map((group) => {
         return (
-          <div key={group.title} className="skills-section__skills-group mb-12">
-            <h3 className="skills-section__subhead mb-12">{group.title}:</h3>
+          <div key={group.title} className="skills-section__skills-group mb-12 md:w-full md:mb-20">
+            <h3 className="skills-section__subhead mb-12 text-center md:text-start md:mb-16">{group.title}:</h3>
             <div className="overflow-y-auto max-h-screen w-full">
-              <div className="flex flex-col flex-wrap items-center ">
+              <Grid container spacing={4}>
                 {group.skills.map((skill) => {
                   return (
-                    <div
+                    <Grid
+                    size={{ xs: 12, md: 4, lg: 3 }}
                       key={skill.imgSrc}
-                      className="skills-section__skill w-full flex flex-col flex-wrap items-center"
+                      className="skills-section__skill flex flex-col flex-wrap items-center"
                     >
                       <img
                         src={skill.imgSrc}
@@ -154,10 +167,10 @@ const SkillsSection = () => {
                       <h4 className="skills-section__skill-title text-center uppercase text-xl tracking-widest">
                         {skill.title}
                       </h4>
-                    </div>
+                    </Grid>
                   );
                 })}
-              </div>
+              </Grid>
             </div>
           </div>
         );

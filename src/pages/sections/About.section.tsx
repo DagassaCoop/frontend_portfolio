@@ -12,7 +12,7 @@ const AboutSection = () => {
   return (
     <section className="about-section flex flex-col flex-wrap items-center">
       <div className="about-section__personal-info w-full flex flex-col flex-wrap items-center">
-        <h2 className="subtitle mb-10 md:mb-16" id="aboutMe">
+        <h2 className="subtitle mb-10 md:mb-20" id="aboutMe">
           About me
         </h2>
         <p className="mb-6 text-justify open-sans">
